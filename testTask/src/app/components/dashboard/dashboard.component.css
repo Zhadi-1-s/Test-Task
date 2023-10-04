@@ -1,0 +1,40 @@
+nav{
+    background-color: rgb(230, 48, 48);
+    width: 100%;
+    height: 70px;
+    margin-top: 0px;
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.user{
+    width: 40px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: grey;
+    margin-right: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.left-menu{
+    height: 100%;
+    background-color: grey;
+    width: 200px;
+    position: absolute;
+    border-radius: 5px;
+}
+.left-menu-first{
+    position: relative;
+}
+.left-menu-first span{
+    color: white;
+    font-size: 15px;
+    font-family;
+}
+#desc{
+    font-size: 20px;
+    position: absolute;
+    left: 150xpx;
+}
