@@ -76,10 +76,13 @@ nav{
     position: relative;
     top: 80px;
     right:150px;
-    display: block;
+    display:flex;
+    justify-content: space-between;
+    width: 550px;
 }
 .main-buttons button{
-    width: 120px;
+    width: 140px;
+    max-width: 150px;
     height: 35px;
     border-radius: 5px;
     background-color: rgb(230, 48, 48);
@@ -89,6 +92,21 @@ nav{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+}
+#filter-button{
+    position: relative;
+    left:920px;
+    top: 50px;
+    border-radius: 5px;
+    border:none;
+    background-color: gray;
+    opacity: 0.5;
+    width: 100px;
+    height: 30px;
+}
+.filter{
+    position: relative;
+    
 }
 @media (max-width:1000px){
     nav{
