@@ -14,6 +14,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(private userService: UserService){
     document.body.style.overflow = 'hidden'
+    document.body.style.backgroundColor = 'rgb(230,230,230)'
   }
 
   ngOnInit(): void {
