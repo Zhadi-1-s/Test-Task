@@ -10,7 +10,11 @@ export class DashboardComponent implements OnInit {
   
   users: any[] = [];
 
-  constructor(private userService: UserService){}
+  color = "gray"
+
+  constructor(private userService: UserService){
+    document.body.style.overflow = 'hidden'
+  }
 
   ngOnInit(): void {
       this.userService.getUsers().subscribe(
@@ -21,6 +25,13 @@ export class DashboardComponent implements OnInit {
           console.error(error.message);
         }
       )
+  }
+
+  changeColor(){
+    this.color = "rgb(176,176,176)"
+  }
+  resetColor(){
+    this.color = "gray"
   }
 
 }

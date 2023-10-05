@@ -9,11 +9,21 @@
             <span>Суперагент</span>
             <span style="font-size: 10px;">Банк ВТБ(ПАО)</span>
         </div>
-        <div class="left-menu-second">
-            <span>Управление </span>
-            <span style="font-size: 10px; text-decoration: underline;">Карточка контрагента</span>
-            <span style="font-size: 10px; text-decoration: underline;">Договоры контрагента</span>
+        <div class="left-menu-second" (click)="changeColor()" [style.background-color]="color">
+            <span style="font-size: 15px; position: relative; left: 50px;">Управление </span>
+            <span style="font-size: 10px; text-decoration: underline; margin-left: 45px;">Карточка контрагента</span>
+            <span style="font-size: 10px; margin-left: 45px;">Договоры контрагента</span>
+        </div>
+        <div class="left-menu-third">
+                <span>Субагенты</span>
         </div>
     </div>
-    <!-- <h1 id="desc">Настройка учетных записей сорудников контрагента</h1> -->
+    <div class="container">
+        <span style="color: black; position: relative;right: 150px; top: 30px; cursor: pointer; opacity: 0.6;" (click)="resetColor()"><- Назад</span>
+        <h1 style="position: relative;top: 50px; right: 150px; font-size: 30px;">Настройка учетных записей сотрудников контрагента</h1>
+        <div class="main-buttons">
+            <button><span>Добавить</span> <i class="bi bi-plus-circle" style="color: white; position: relative; left: 8px;"></i></button>
+            <button><span>Разблокировать</span></button>
+        </div>
+    </div>
 </div>
