@@ -19,7 +19,7 @@ nav{
     text-align: center;
 }
 .left-menu{
-    height: 100%;
+    height: 90%;
     background-color: grey;
     width: 200px;
     position: absolute;
@@ -27,14 +27,40 @@ nav{
 }
 .left-menu-first{
     position: relative;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
 .left-menu-first span{
     color: white;
     font-size: 15px;
-    font-family;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.left-menu-second{
+    position: relative;
+    left: 50px;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px ;
+    width: 150px;
+    height: 100px;
+}
+.left-menu-second span{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #desc{
     font-size: 20px;
     position: absolute;
     left: 150xpx;
+}
+
+@media (max-width:1000px){
+    nav{
+        width: 300px;
+    }
 }
