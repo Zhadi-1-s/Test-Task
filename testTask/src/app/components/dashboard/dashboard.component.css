@@ -146,6 +146,17 @@ input:focus{
     outline-color: rgb(230, 48, 48);
     opacity: 1;
 }
+.inputs-2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 90px;
+}
+.filter-buttons{
+    position: relative;
+    
+}
 @media (max-width:1000px){
     nav{
         width: 300px;
