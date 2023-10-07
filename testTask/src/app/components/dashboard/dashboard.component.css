@@ -74,6 +74,12 @@ nav{
     height: 1000px;
     width: 1200px;
 }
+#desc{
+    position: relative;
+    top: 50px;
+    right: 10px;
+    font-size: 30px;
+}
 .main-buttons{
     position: relative;
     top: 80px;
@@ -134,8 +140,22 @@ nav{
 }
 .inputs{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    border: solid 2px;
+    position: relative;
+    right: 15px;
+    height: 45px;
+    top: 10px;
+    height: 200px;
+    margin-bottom: -80px;
+}
+#wrap-input-1{
+    position: relative;
+    left:60px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
 }
 input{
     width: 200px;
@@ -154,6 +174,8 @@ input:focus{
     flex-direction: row;
     justify-content: space-between;
     top: 90px;
+    border: solid 2px;
+    right: 20px;
 }
 .filter-buttons{
     position: relative;
@@ -171,6 +193,7 @@ input:focus{
     background-color: rgb(230, 48, 48);
     border: none;
     color: white;
+    position: relative;
 }
 #button-2{
     width: 150px;
@@ -185,10 +208,12 @@ input:focus{
     top: 120px;
     border: solid 2px;
     width: 1200px;
-    height: 400px;
+    height: 300px;
+    max-height: 600px;
+    
 }
-@media (max-width:1000px){
-    nav{
-        width: 300px;
+@media (max-width:1024px){
+    #desc{
+        font-size: 22px;
     }
 }
