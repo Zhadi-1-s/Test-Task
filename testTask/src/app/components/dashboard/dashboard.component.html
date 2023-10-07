@@ -24,16 +24,23 @@
         <div class="main-buttons">
             <button><span>Добавить</span> <i class="bi bi-plus-circle" style="color: white; position: relative; left: 8px;"></i></button>
             <button><span>Разблокировать</span> <i class="bi bi-check-circle" style="color: white; position: relative; left: 8px;"></i></button>
-            <button><span>Заблокировать</span><i class="bi bi-check-circle" style="color: white; position: relative; left: 8px;"></i></button>
+            <button><span>Заблокировать</span><i class="bi bi-x-circle" style="color: white; position: relative; left: 8px;"></i></button>
         </div>
         <button id="filter-button"> <i class="bi bi-filter"></i><span>Фильтр</span></button>
         <div class="filter">
             <div class="filter-into">
                 <h1>Фильтр</h1>
                 <div class="inputs">
-                    <div style="display:flex; flex-direction:row">
-                        <label for=""><span>E-mail</span></label>
+                    <div id="wrap-input">
+                        <label ><span>E-mail</span></label>
                         <input type="text">
+                    </div>
+                    <div id="wrap-input">
+                        <label for=""><span>Телефон</span></label>
+                        <input type="text">
+                    </div>
+                    <div id="wrap-input">
+                        <label for=""><span></span></label>
                     </div>
                 </div>
                 <!-- <div class="inputs-2">
