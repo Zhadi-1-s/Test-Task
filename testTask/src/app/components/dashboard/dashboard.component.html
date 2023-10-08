@@ -80,8 +80,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">Дата</th>
+                    <tr *ngFor="let user of userData">
+                            <td>{{user.id}}</td>
+                            <td>{{user.email}}</td>
+                            <td></td>
                     </tr>
                 </tbody>
             </table>

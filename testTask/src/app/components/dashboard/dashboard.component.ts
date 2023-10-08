@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserViewModelService } from 'src/app/shared/user-view-model.service';
 import { UserService } from 'src/app/shared/user.service';
 
 @Component({
@@ -8,24 +9,19 @@ import { UserService } from 'src/app/shared/user.service';
 })
 export class DashboardComponent implements OnInit {
   
-  users: any[] = [];
+  userData: any;
 
   color = "gray"
 
-  constructor(private userService: UserService){
+  constructor(private userViewModel: UserViewModelService){
     document.body.style.overflowX = 'hidden'
     document.body.style.backgroundColor = 'rgb(230,230,230)'
   }
 
   ngOnInit(): void {
-      this.userService.getUsers().subscribe(
-        data => {
-          this.users = data;
-        },
-        error => {
-          console.error(error.message);
-        }
-      )
+    this.userViewModel.getUsersData$().subscribe((data) => {
+      this.userData = data;
+    })
   }
 
   changeColor(){
