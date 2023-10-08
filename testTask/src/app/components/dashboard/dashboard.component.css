@@ -120,7 +120,7 @@ nav{
     position: relative;
     top: 80px;
     width: 1200px;
-    height: 400px;
+    height: 380px;
     border: solid 2px;
     right: 10px;
     background-color: white;
@@ -139,29 +139,30 @@ nav{
     font-size: 25px;
 }
 .inputs{
-    display: flex;
-    flex-wrap: wrap;
-    border: solid 2px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     position: relative;
     left: 20px;
-    height: 45px;
     top: 10px;
     height: 200px;
     width: 1100px;
     margin-bottom: -80px;
-    justify-content: space-between;
+    align-content: start;
+    gap: 5px;
 }
 #wrap-input{
     display:flex;
     flex-direction: column;
     position: relative;
-    left: 50px;
+    left: 10px;
 }
+
 #wrap-input label{
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 input{
-    width: 200px;
+    width: 240px;
     height: 40px;
     border-radius: 10px;
     opacity: 0.5;
@@ -182,7 +183,7 @@ input:focus{
 }
 .filter-buttons{
     position: relative;
-    top: 130px;
+    top: 100px;
     left: 45px;
     display: flex;
     flex-direction: row;
@@ -215,8 +216,18 @@ input:focus{
     max-height: 600px;
     
 }
+
 @media (max-width:1024px){
     #desc{
         font-size: 22px;
+    }
+    .inputs{
+        width: 830  px;
+        height: 500px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .filter{
+        width: 860px;
+        height: 600px;
     }
 }
