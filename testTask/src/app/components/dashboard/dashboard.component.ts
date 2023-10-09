@@ -11,7 +11,11 @@ export class DashboardComponent implements OnInit {
   
   userData: any;
 
+  combinedData: any;
+
   color = "gray"
+
+  user:string = 'пользователь'
 
   constructor(private userViewModel: UserViewModelService){
     document.body.style.overflowX = 'hidden'
@@ -20,7 +24,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.userViewModel.getUsersData$().subscribe((data) => {
-      this.userData = data;
+      this.combinedData = data;
     })
   }
 

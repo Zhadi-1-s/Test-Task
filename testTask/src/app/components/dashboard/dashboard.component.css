@@ -216,6 +216,16 @@ input:focus{
     max-height: 600px;
     border-radius: 8px;
     border: none;
+    overflow-x: auto;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    padding: 8px;
+    text-align: left;
 }
 
 @media (max-width:1024px){
@@ -242,5 +252,15 @@ input:focus{
     #filter-button{
         position: relative;
         right: 150px;
+    }
+    .spisok{
+        overflow-x: scroll;
+    }
+    table{
+        width: 500px;
+    }
+    th,td{
+        display: block;
+        width: 100%;
     }
 }
