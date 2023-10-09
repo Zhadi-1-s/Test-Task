@@ -67,7 +67,15 @@
             </div>
         </div>
         <div class="spisok">
-            <table class="table">
+            <div class="header">
+                <span>Логин</span>
+                <span>E-mail</span>
+                <span>Телефон</span>
+            </div>
+            <div class="userData" *ngFor="let user of combinedData">
+                <span>{{user.name}}</span>
+            </div>
+            <!-- <table class="table">
                 <thead>
                     <tr>
                         <th scope="col">Логин</th>
@@ -92,7 +100,7 @@
                             <td> {{user.is_ecp ? 'Да' : 'Нет'}}</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
         </div>
     </div>
 </div>
