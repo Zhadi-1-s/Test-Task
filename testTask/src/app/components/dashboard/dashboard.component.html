@@ -67,13 +67,28 @@
             </div>
         </div>
         <div class="spisok">
+            <div class="main-header">
+
+            </div>
             <div class="header">
                 <span>Логин</span>
                 <span>E-mail</span>
                 <span>Телефон</span>
+                <span>Роли</span>
+                <span>Дата изменения</span>
+                <span>Дата создания</span>
+                <span>Статус</span>
+                <span>Наличие ЗП</span>
             </div>
             <div class="userData" *ngFor="let user of combinedData">
-                <span>{{user.name}}</span>
+               <span>{{user.name}}</span>
+                <span>{{user.email}}</span>
+                <span>{{user.phone}}</span>
+                <span>{{user.is_admin ? 'Админ' : 'Пользователь'}}</span>
+                <span>{{user.update_at}}</span>
+                <span>{{user.create_at}}</span>
+                <span>{{user.status}}</span>
+                <span>{{user.is_ecp}}</span>
             </div>
             <!-- <table class="table">
                 <thead>

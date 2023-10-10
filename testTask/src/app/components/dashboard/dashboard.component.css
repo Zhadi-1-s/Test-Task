@@ -210,6 +210,7 @@ input:focus{
 .spisok{
     position: relative;
     top: 120px;
+    right: 10px;
     border: solid 2px;
     width: 1200px;
     height: 300px;
@@ -218,21 +219,41 @@ input:focus{
     border: none;
     overflow-x: auto;
 }
+.main-header{
+    position: relative;
+    width: 100%;
+ 
+    background-color: white;
+    height: 60px;
+}
 .header{
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 50px;
     background-color: rgb(230, 48, 48);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
+}
+.header span{
+    margin-top: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .userData{
     position: relative;
     width:100%;
-    height: 200px;
-    border: solid 2px;
-    
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+}
+.userData span{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
 }
 @media (max-width:1024px){
     #desc{
